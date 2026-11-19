@@ -251,6 +251,24 @@ nav.tabs button[aria-current="page"]{background:var(--purple);border-color:var(-
 @media (max-width:480px){.wbs>div{grid-template-columns:96px 1fr;gap:12px}.wbs .wbi{width:96px;height:96px}}
 
 @media (max-width:640px){nav.tabs .in{flex-wrap:wrap!important;overflow-x:visible!important;padding:10px 14px}nav.tabs button{white-space:normal}}
+
+/* Bedrock */
+#bedrock{scroll-margin-top:130px}
+.bdcard{background:#fff;border:2px solid var(--line);border-left:8px solid var(--purple);border-radius:14px;padding:16px 18px;font-size:18px;line-height:1.45;margin-top:6px}
+.bdcard p{margin:0 0 12px}
+.bdbtn{display:inline-block;font-weight:800;font-size:20px;background:var(--purple);color:#fff!important;text-decoration:none;border-radius:999px;padding:12px 22px;margin:4px 0 10px}
+.bdbtn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.bdnote{display:block;font-size:17px;color:var(--ink2)}
+.bdh{font-size:22px;margin:22px 0 10px}
+.bdrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:16px;border:2px solid var(--line);border-radius:14px;padding:14px 16px;background:#fff;margin-bottom:12px;font-size:18px;line-height:1.45}
+.bdrow .sk b{display:block;font-size:20px;margin-bottom:4px}
+.bdrow p{margin:0}
+.bdtag{display:inline-block;background:var(--pale);color:var(--deep);font-weight:800;border-radius:10px;padding:5px 12px;font-size:17px;margin-bottom:8px}
+.bdrow .app{display:block;margin-top:8px;font-size:17px}
+.bdweek{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:10px;margin-top:6px}
+.bdweek div{background:var(--pale);border-radius:12px;padding:12px 14px;font-size:18px;line-height:1.4}
+.bdweek b{display:block;font-size:19px}
+@media (max-width:640px){.bdrow{grid-template-columns:1fr;gap:8px}}
 </style>
 </head>
 <body>
@@ -285,7 +303,8 @@ nav.tabs button[aria-current="page"]{background:var(--purple);border-color:var(-
  <ol class="steps">
   <li>Look back through your exercise book at the tasks and questions you did on <i>The Breadwinner</i>.</li>
   <li>Missed a lesson? Make sure you read the parts of the book that you missed.</li>
- </ol>
+ <li>Keep up your <b>Bedrock</b> lessons every week, and use the <a href="#" onclick="document.getElementById('bedrock').scrollIntoView({behavior:'smooth'});return false">Bedrock activities below</a> to help with this assessment.</li>
+</ol>
 
  <h2>To get the very top marks</h2>
  <ol class="steps top">
@@ -294,7 +313,8 @@ nav.tabs button[aria-current="page"]{background:var(--purple);border-color:var(-
   <li><b>Choose quotes</b> from the text to back up your ideas and opinions.</li>
  </ol>
 
- <div class="soon"><b>Next:</b> learn your key English words in the <a href="#words">Key words flashcards</a>. More notes and quizzes for Year 7 English are coming soon.</div>
+ <h2 id="bedrock">Bedrock: keep it going</h2><div class="bdcard"><p><b>Bedrock</b> is the vocabulary and grammar programme you use for English. Keep doing the Bedrock work your teacher sets every week: it builds the reading and writing skills your assessment tests. This app is extra revision, <b>not</b> instead of Bedrock.</p><a class="bdbtn" href="https://app.bedrocklearning.org/" target="_blank" rel="noopener">Log in to Bedrock &#8599;</a><span class="bdnote">Choose <b>Student</b> and log in the way you do in school. Bedrock works in your web browser, so there is nothing to download. If you cannot log in, ask your English teacher.</span></div><h3 class="bdh">Bedrock activities that help with this assessment</h3><div class="bdrow"><div class="sk"><b>Read the extract carefully</b><p>Your exam starts with an extract. You need to understand it well before you answer.</p></div><div><span class="bdtag">Bedrock Vocabulary</span><p>Every lesson starts with a text. Read it slowly, all the way through, before you start the activities. That is exactly what you will do with the extract in your exam.</p></div></div><div class="bdrow"><div class="sk"><b>Work out harder words</b><p>The extract may have words you do not know.</p></div><div><span class="bdtag">Bedrock Vocabulary</span><p>Bedrock teaches new words inside a sentence, not on their own. In your exam, do the same: read the whole sentence around a tricky word to work out what it means.</p></div></div><div class="bdrow"><div class="sk"><b>Comment on the writer’s methods</b><p>Top marks need you to say which words the writer chose, and why.</p></div><div><span class="bdtag">Bedrock Grammar</span><p>The lessons on <b>word classes</b> (nouns, verbs, adjectives, adverbs) give you the names for the words a writer chooses, so you can write “the verb … suggests …”.</p><span class="app">In this app: <a href="#words">Word classes flashcards</a> and the <a href="#bank">Word bank</a>.</span></div></div><div class="bdrow"><div class="sk"><b>Write clear answers</b><p>Comprehension answers need full, accurate sentences.</p></div><div><span class="bdtag">Bedrock Grammar</span><p>The lessons on <b>sentences and punctuation</b> (full stops, commas, conjunctions and clauses) help you write answers that are clear and correct.</p><span class="app">In this app: <a href="#words">Sentences and grammar flashcards</a>.</span></div></div><div class="bdrow"><div class="sk"><b>Use quotes and ambitious words</b><p>Back up your ideas and explain them with precise words.</p></div><div><span class="bdtag">Free-writing tasks</span><p>When Bedrock asks you to use the new word in your own writing, try writing a sentence about the book you study in class.</p></div></div><h3 class="bdh">How a Bedrock topic works</h3><div class="bdweek"><div><b>1. Pre-test</b>A short quiz on the topic’s words before you start.</div><div><b>2. Six lessons</b>Each one starts with a text to read, then activities on the new words.</div><div><b>3. Free writing</b>At the end of a lesson you use the new word in your own writing.</div><div><b>4. Post-test</b>A final quiz that shows how much you have learned.</div></div><p style="font-size:17px;margin-top:10px">Grammar lessons work in a similar way: a short video and a text that shows the grammar in use, then activities to practise it.</p><h3 class="bdh">A good revision week</h3><div class="bdweek"><div><b>Bedrock first</b>Do the Bedrock lessons your teacher sets, without rushing.</div><div><b>Then 10 minutes here</b>Flashcards or the Word bank in this app.</div><div><b>Then 10 minutes on your exercise book</b>Re-read one lesson and say the main points out loud.</div></div>
+<div class="soon"><b>Next:</b> learn your key English words in the <a href="#words">Key words flashcards</a>. More notes and quizzes for Year 7 English are coming soon.</div>
 </section>
 <section id="v-words" hidden>
  <span class="tag">KEY WORDS</span>
